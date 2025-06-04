@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,7 +16,8 @@ body {
     height: 100vh;
     padding: 0;
 }
-.container{
+
+.container {
     align-items: center;
     background-color: #ffffff;
     display: flex;
@@ -24,14 +25,14 @@ body {
     overflow: hidden;
 }
 
-.imagem{
+.imagem {
     width: 350px;
     object-fit: cover;
     border-top-left-radius: 12px;
     border-end-start-radius: 12px;
 }
 
-.conteudo_texto{
+.conteudo_texto {
     width: 350px;
     height: 525px;
     padding: 30px;
@@ -39,7 +40,7 @@ body {
     color: #6c7289;
 }
 
-.conteudo_texto h1{
+.conteudo_texto h1 {
     font-size: 40px;
     font-family: Fraunces;
     color: black;
@@ -47,38 +48,44 @@ body {
     margin-top: 20px;
 }
 
-.container h2{
+.container h2 {
     letter-spacing: 5px;
     font-weight: normal;
 }
 
-.conteudo_texto p, h2{
-    margin-top: 20px;
-    font-family: Montserrat, serif  ;
+.conteudo_texto p,
+h2 {
+    margin-top: 25px;
+    font-family: Montserrat, serif;
     font-size: 16px;
     line-height: 24px;
 }
 
-.container span{
+.container span {
     display: flex;
+    margin-right: 20px;
 }
 
-#preco_principal{
+#preco_principal {
     font-family: Fraunces;
     font-size: 30px;
-    color: #3c8067;
+    color: #1e5c45;
 }
 
-button{
+button {
     align-items: center;
     justify-content: center;
     height: 50px;
-    width: 200px;
+    width: 100%;
     color: #ffffff;
     border: none;
     font-family: Montserrat;
     border-radius: 8px;
-    background-color: #3c8067;
-    font-size: 15px;
-    margin-top: 20px;
+    background-color: #1e5c45;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+button:hover {
+    background-color: #204d1c;
 }
