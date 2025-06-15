@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #f2ebe3;
+    background-color: #e9d5d5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,16 +25,19 @@ body {
     overflow: hidden;
 }
 
-.imagem {
+#imgDesktop {
     width: 350px;
     object-fit: cover;
     border-top-left-radius: 12px;
     border-end-start-radius: 12px;
 }
 
+#imgMobile{
+    display: none;
+}
+
 .conteudo_texto {
     width: 350px;
-    height: 525px;
     padding: 30px;
     text-align: left;
     color: #6c7289;
@@ -88,4 +91,42 @@ button {
 
 button:hover {
     background-color: #204d1c;
+}
+
+@media screen and (max-width: 730px){
+
+    #div_principal{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 8%;
+        width: 100%;
+    }
+
+    .container{
+        margin-top: 20%;
+        flex-direction: column;
+    }
+
+    #imgDesktop{
+        display: none;
+    }
+
+    #imgMobile{
+        display: block;
+        width: 100%;  
+    }
+    
+    .conteudo_texto h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .conteudo_texto, p, h2{
+        font-size: 14px;
+        line-height: 30px;
+        width: 100%;
+        margin-top: 7px;
+    }
+
 }
